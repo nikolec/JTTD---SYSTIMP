@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>DOLLJOY</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="blue">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="home2.html" class="simple-text">
+                    DOLLJOY
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="addNewDoll.html">
+                        <i class="pe-7s-magic-wand"></i>
+                        <p>Add New Doll</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewPremadeDolls.html">
+                        <i class="pe-7s-look"></i>
+                        <p>View Premade Dolls</p>
+                    </a>
+                </li>
+                
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+              
+                        <li>
+                           <a href="">
+                                <i class="fa fa-search"></i>
+								<p class="hidden-lg hidden-md">Search</p>&nbsp;&nbsp;&nbsp;
+                                <input type="textarea" placeholder="Search..."></input>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+   
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <p>
+										Website
+										<b class="caret"></b>
+									</p>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="home2.html">Home</a></li>
+                                <li><a href="FAQ2.html">F.A.Q.</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="services2.html">Services</a></li>
+                                <li><a href="contact2.html">Contact</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="home.html">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+						<li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+  <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Add New Doll</h4>
+                            </div>
+                            <div class="content">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                               <label>Doll Name</label>
+                                                <input type="text" class="form-control" placeholder="Doll Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Product Number</label>
+                                                <input type="text" class="form-control" placeholder="Product Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                
+											  <label>Gender</label>
+											  <select class="form-control input" onchange="showDiv(this)">
+												<option value="0">- Select -</option>
+												<option value="0">Male</option>
+												<option value="1">Female</option>
+											  </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>HAIRSTYLE</label>
+                                  
+	<head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/hair4.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/hair5.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/hair6.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+	  
+	  <tr>
+
+		<td><center><img src="images/hair7.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/hair8.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/hair9.png" style="width:100%"><br><input type="radio"></center></td>	
+	  </tr>	 
+
+	</table>
+
+	<form action="/action_page.php">
+	OR Select image:<br><input type="file" name="img" multiple>
+	</form>
+
+	</font>
+	</body>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>HAIR COLOR</label>
+                                                
+	<head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/hcolor1.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/hcolor2.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/hcolor3.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+	  
+	  <tr>
+
+		<td><center><img src="images/hcolor4.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/hcolor5.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/hcolor6.png" style="width:100%"><br><input type="radio"></center></td>	
+	  </tr>	 
+
+	</table>
+	</font>
+	</body>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Skin Color</label>
+                                                <head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/skin1.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/skin2.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/skin3.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+	  
+	  <tr>
+
+		<td><center><img src="images/skin4.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/skin5.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/skin6.png" style="width:100%"><br><input type="radio"></center></td>	
+	  </tr>	 
+
+	</table>
+	</font>
+	</body>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Eye color</label>
+
+	<head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/eyeColor1.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/eyeColor2.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/eyeColor3.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+
+	</table>
+	</font>
+	</body>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Clothes</label>
+
+	<head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/clo1.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/clo6.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/clo2.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+	  
+	  <tr>
+
+		<td><center><img src="images/clo7.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/clo8.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/clo9.png" style="width:100%"><br><input type="radio"></center></td>	
+	  </tr>	 
+
+	</table>
+
+	<form action="/action_page.php">
+	OR Select image:<br><input type="file" name="img" multiple>
+	</form>
+
+	</font>
+	</body>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Accessories</label>
+
+	<head>
+	<style>
+	table {
+		width:100%;
+
+	}
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+	table#t01 tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+	table#t01 tr:nth-child(odd) {
+	   background-color:#f9f9f9;
+	}
+	table#t01 th {
+		background-color: white;
+		color: black;
+	}
+	</style>
+	</head>
+	<body>
+
+	<table id="t01">
+	  	  
+	  <tr>
+
+		<td><center><img src="images/acc1.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/acc2.png" style="width:100%"><br><input type="radio"></center></td>
+		<td><center><img src="images/acc3.png" style="width:100%"><br><input type="radio"></center></td>	
+
+	  </tr>	  
+	  
+	  <tr>
+
+		<td><center><img src="images/acc7.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/acc8.png" style="width:100%"><br><input type="radio"></center></td>	
+		<td><center><img src="images/acc9.png" style="width:100%"><br><input type="radio"></center></td>	
+	  </tr>	 
+
+	</table>
+
+	<form action="/action_page.php">
+	OR Select image:<br><input type="file" name="img" multiple>
+	</form>
+
+	</font>
+	</body>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+
+                                    <button type="submit" class="btn btn-info btn-fill pull-right">ADD DOLL TO CATALOG</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="image">
+                                <img src="images/sample.png" alt="..."/>
+                            </div>
+                            <div class="content">
+                                
+                                <p>
+                                <center>
+								<form action="/action_page.php">
+								Upload image:<br><input type="file" name="img" multiple>
+								</form>
+								</center>
+								</p>
+
+                            </div>
+                            <hr>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="home2.html">Dolljoy</a>, designed by Before You Exit
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+
+</html>
